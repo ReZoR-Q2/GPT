@@ -1,0 +1,17 @@
+<h2>Комментарии</h2>
+
+{% if user.is_authenticated %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Оставить комментарий</button>
+</form>
+{% else %}
+<p>Вы должны <a href="{% url 'login' %}">войти</a>, чтобы оставлять комментарии.</p>
+{% endif %}
+
+<ul>
+    {% for comment in comments %}
+        <li><strong>{{ comment.user.username }}</strong>: {{ comment.content }}</li>
+    {% endfor %}
+</ul>
