@@ -1,4 +1,121 @@
-<h1> Map </h1>
-<br/>
-<a href='/'> home </a>
-<a href='/contact'> contact </a>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'Map' - Навигационная страница</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .map-container {
+            width: 80%;
+            height: 500px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href='/'> Главная </a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href='/contact'> Контакты </a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href='/map'> Карта </a></li>
+                <li><a href="blog.html">Блог</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="main-content">
+        <div class="map-container">
+            <!-- Здесь будет карта -->
+            <h2>Карта для навигации</h2>
+            <!-- Для реального использования можно вставить iframe с Google Maps или другой картографической службой -->
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия использования</a>
+            <a href="#">Поддержка</a>
+            <a href="#">Социальные сети</a>
+            <a href="#">Контакты</a>
+        </div>
+        <p>&copy; 2023 Название компании. Все права защищены.</p>
+    </footer>
+</body>
+</html>
